@@ -7,8 +7,14 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    DsfrAccordion: typeof import('@gouvminint/vue-dsfr')['DsfrAccordion']
+    DsfrAccordionsGroup: typeof import('@gouvminint/vue-dsfr')['DsfrAccordionsGroup']
+    DsfrCard: typeof import('@gouvminint/vue-dsfr')['DsfrCard']
     DsfrHeader: typeof import('@gouvminint/vue-dsfr')['DsfrHeader']
+    DsfrTabContent: typeof import('@gouvminint/vue-dsfr')['DsfrTabContent']
+    DsfrTabs: typeof import('@gouvminint/vue-dsfr')['DsfrTabs']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    VIcon: typeof import('oh-vue-icons')['OhVueIcon']
   }
 }
